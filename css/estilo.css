@@ -1,0 +1,34 @@
+
+body  {
+
+ background-image: url("../img/fundo2.jpg");
+ background-repeat: round;
+ background-attachment: fixed;
+ background-size: 100%;
+
+font-size: 14px;
+margin-right:auto; 
+margin-left:auto;
+
+}
+
+
+ h1,h4{ color:#BDC4FA; background-color:#254258; text-align: center;border-bottom:5px solid #BDC4FA}
+ h3{ color:#BDC4FA;text-align: center;}
+ h2{color: black; background-color: #BDC4FA; text-align: center;border-bottom:5px solid #254258; }
+ a{color: #BDC4FA;text-align: center;}
+ a:active {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: underline;}
+
+ p{color: #ffffff; text-align: center;}
+ul,li{color: #ffffff;}
+img{ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+  
+ 
