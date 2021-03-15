@@ -1,2 +1,2 @@
-# https://samiraoliveira.github.io/PrimeiroSite/.
+# https://samiraoliveira.github.io/PrimeiroSite/
 Projetos de IW
