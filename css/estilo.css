@@ -15,7 +15,7 @@ body  {
 
 }
 header{ 
-		background-color: rgba(37, 66, 88, 100);
+		background-color: rgba(37, 66, 88, 100, 0.5);
 		padding: 0.5%;
 		margin-bottom: 2%; 
 		
@@ -123,12 +123,12 @@ th:hover { font-size:20px;
 	text-decoration: none;
 }
 .pag:hover{
-	color:#7B68EE;
+	
 	font-size:21px;
 
 }
   .centro{
-  	color: #BDC4FA;
+  	color: white;
   	font-size: 25px;
   	
 
