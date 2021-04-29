@@ -2,58 +2,76 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"> 
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<title>Site 1C Samira</title>
-
+    
 </head>
 
 <body>
-	
-	<h1>HTML E CSS</h1>
-	<h3 style="text-align: center; color:#ffffff;">Conheça a Etec -<a href="https://www.etecmcm.com.br/"> Maria Cristina Medeiros</a></h3>
-	<h2>Introdução ao HTML </h1> 
-	<p>HTML (Hyper Text Markup Language) é uma linguagem de marcação de hipertexto, utilizada para a criação de de páginas da Web. Essa é a linguagem que o seu navegador (Browser) decodifica para exibir as páginas. (FERREIRA & EIS, ONLINE, p.7)</p>
-	<p>O HTML é baseado no conceito de Hipertexto. Hipertexto são conjuntos de elementos – ou nós – ligados por conexões. Estes elementos podem ser palavras, imagens, vídeos, áudio, documentos etc.</p>
-	<img src="img/intro.jpg" alt="Imagem escrito: HTML e CSS">
+    <header>
+        <nav>
+            <h1>HTML E CSS</h1>
+        </nav>
+    </header>
+    <div class="container">	
+    	   <h3 style="text-align: center; color:
+            #fff; text-decoration: none;"><b>Conheça a <a class="two" href="https://www.etecmcm.com.br/">Etec MCM</a></b></h3>
 
-	<h2>Breve Histórico da evolução do HTML</h2>
-	<p>Desde a invenção da web em 1992 por Tim Berners-Lee, a HTML evoluiu a cada versão lançada, sendo a versão mais atual a HTML5. (SILVA, 2011, p.21)</p>
-    <img src="img/evo.png" alt="Imagem da Evoluçao do HTML5" > <img src="videos/planeta.gif" alt="gif do planeta terra">
+            <div>
+                    <h2>Introdução ao HTML </h1> 
+            	   <p>HTML (Hyper Text Markup Language) é uma linguagem de marcação de hipertexto, utilizada para a criação de de páginas da Web. Essa é a linguagem que o seu navegador (Browser) decodifica para exibir as páginas. (FERREIRA & EIS, ONLINE, p.7)</p>
+            	   <p>O HTML é baseado no conceito de Hipertexto. Hipertexto são conjuntos de elementos – ou nós – ligados por conexões. Estes elementos podem ser palavras, imagens, vídeos, áudio, documentos etc.</p>
+            	   <img src="img/intro.jpg" alt="Imagem escrito: HTML e CSS"style="width: 30%; outline-style: ridge;outline-color:#254258;"> 
 
-    <h2>O que é e para que serve o CSS</h2>
-    <p>CSS (Cascading Style Sheets — Folhas de Estilos em Cascata) é uma extensão da HTML, uma linguagem de estilo, ou seja, fazendo o uso dessa linguagem é possível definir como o conteúdo dos elementos HTML serão apresentados na página da Web. Essa extensão foi incorporada à linguagem HTML a partir de sua quarta versão em 1997. Ou seja, se você tivesse 10 tipos diferentes de fontes em uma mesma página, então teria de   fazer esta formatação 10 vezes. Até que fazer isto em uma só página, tudo bem, mas se o site tivesse 100 páginas então seria muito trabalhoso manter e alterar estas fontes, não acha?</p>
-    <h3>Benefícios do uso do CSS</h3>
-    <ul>
-    <li>Controle do layout de diversos documentos utilizando apenas uma folha de estilos;</li>
-    <li>Maior precisão no controle do layout e design;</li>
-	<li>Aplicação de diferentes layouts para adaptação do conteúdo e design em diferentes formas de apresentação (impressoras, telas de diferentes tamanhos, etc.) (W3CSCHOOL, ONLINE).</li> </ul>
-    <img src="img/css.jpg" alt="Imagem de um código CSS">
-     <h2>O que é o W3C?</h2>
-    <p>O W3C (World Wide Web Consortium), criado em outubro de 1994 por Tim Berners-Lee, é um consórcio internacional formado por empresas, instituições, pesquisadores, desenvolvedores e público em geral. A finalidade desse consórcio é desenvolver a web a seu potencial máximo, criando normas, especificações e padronizações que se aplicam aos mais diversos segmentos e setores da web. (W3C, ONLINE) </p>
-    <h3>Consórcio World Wide Web</h3>
-    <ul>
-    	<li>Desenvolve recomendações abertas (Padrões Web);</li>
-    	<li>Até agora, mais de 80 padrões;</li>
-    	<li>Engajado em educação, expansão e desenvolvimento de orientações; </li>
-    	<li>Um fórum neutro para construir consenso em torno de padrões Web;</li>
-    	<li>Padrões Web devem ser abertos, isto é, não proprietários;</li>
-    	<li>A Web deve ser acessível para todos.</li>
+            	   <h2>Breve Histórico da evolução do HTML</h2>
+            	   <p>Desde a invenção da web em 1992 por Tim Berners-Lee, a HTML evoluiu a cada versão lançada, sendo a versão mais atual a HTML5. (SILVA, 2011, p.21)</p>
+                    <img src="img/evo.png" alt="Imagem da Evoluçao do HTML5" style="width: 30%; outline-style: ridge;outline-color:#254258;" >
+                    <h2>Curiosidades HTML</h2>
+                    <ul>
+                    <li>Uma curiosidade a respeito da evolução do HTML é que em um workshop da W3C em 2004 as empresas Mozila e Opera apresentaram uma proposta para evolução do HTML4 para o HTML5, mas a W3C se recusou a dar continuidade a essa ideia.</li>
+                    <li>Mas pouco tempo depois, as empresas Fundação Mozila, Apple e Opera anunciaram a criação de uma organização que visava a evolução do HTML, tal organização foi denominada WHATWG, a qual passou a desenvolver a linguagem XHTML.</li>
+                    </ul>
+                    <img src="img/timbernes.png" alt="Tim Berners-Lee" style="width: 30%; outline-style: ridge;outline-color:#254258;">
+            </div>
+            <div>
+                    <h2>O que é e para que serve o CSS</h2>
+                    <p>CSS (Cascading Style Sheets — Folhas de Estilos em Cascata) é uma extensão da HTML, uma linguagem de estilo, ou seja, fazendo o uso dessa linguagem é possível definir como o conteúdo dos elementos HTML serão apresentados na página da Web. Essa extensão foi incorporada à linguagem HTML a partir de sua quarta versão em 1997. Ou seja, se você tivesse 10 tipos diferentes de fontes em uma mesma página, então teria de   fazer esta formatação 10 vezes. Até que fazer isto em uma só página, tudo bem, mas se o site tivesse 100 páginas então seria muito trabalhoso manter e alterar estas fontes, não acha?</p>
+                        <h3>Benefícios do uso do CSS</h3>
+                        <ul>
+                        <li>• Controle do layout de diversos documentos utilizando apenas uma folha de estilos;</li>
+                        <li>• Maior precisão no controle do layout e design;</li>
+                	    <li>• Aplicação de diferentes layouts para adaptação do conteúdo e design em diferentes formas de apresentação (impressoras, telas de diferentes tamanhos, etc.) (W3CSCHOOL, ONLINE).</li></ul>
+                        <img src="img/css.jpg" alt="Imagem de um código CSS" style="width: 30%;outline-style: ridge;outline-color:#254258;">
+            </div>
+            <div>
+                    <h2>O que é o W3C?</h2>
+                    <p>O W3C (World Wide Web Consortium), criado em outubro de 1994 por Tim Berners-Lee, é um consórcio internacional formado por empresas, instituições, pesquisadores, desenvolvedores e público em geral. A finalidade desse consórcio é desenvolver a web a seu potencial máximo, criando normas, especificações e padronizações que se aplicam aos mais diversos segmentos e setores da web. (W3C, ONLINE) </p>
+                        <h3>Consórcio World Wide Web</h3>
+                        <ul>
+                    	<li>• Desenvolve recomendações abertas (Padrões Web);</li>
+                    	<li>• Até agora, mais de 80 padrões;</li>
+                    	<li>• Engajado em educação, expansão e desenvolvimento de orientações; </li>
+                    	<li>• Um fórum neutro para construir consenso em torno de padrões Web;</li>
+                    	<li>• Padrões Web devem ser abertos, isto é, não proprietários;</li>
+                    	<li>• A Web deve ser acessível para todos.</li>
+                        </ul>
+                        <img src="img/W3C.png" alt="Imagem escrito: W3C"style="width: 20%; outline-style: ridge;outline-color:#254258;">
+            </div>
+            <div>
+                
 
-    </ul>
-    <img src="img/W3C.png" alt="Imagem escrito: W3C">
-    <h2>Curiosidades HTML</h2>
-    <ul>
-    <li>Uma curiosidade a respeito da evolução do HTML é que em um workshop da W3C em 2004 as empresas Mozila e Opera apresentaram uma proposta para evolução do HTML4 para o HTML5, mas a W3C se recusou a dar continuidade a essa ideia.</li>
-    <li>Mas pouco tempo depois, as empresas Fundação Mozila, Apple e Opera anunciaram a criação de uma organização que visava a evolução do HTML, tal organização foi denominada WHATWG, a qual passou a desenvolver a linguagem XHTML.</li>
-    </ul>
-    <img src="img/timbernes.png" alt="Tim Berners-Lee">    
-    <h2 style="text-align: width;"><mark style="background-color: #BDC4FA;"> Se quiser saber mais sobre HTML e CSS, acesse:</mark></h2>
-    <ul>
-    <h3 style="text-align: center;"><a href="https://www.youtube.com/channel/UCPVxAWpdHNjoUvGR617W5mQ">Cintia Pinho no Youtube</a></h3>
-    <h3 style="text-align: center;"><a href="https://www.w3schools.com/">W3Schools</a></h3> </ul>
-    <h1>Obrigada Pela sua Atenção!!</h1>
-    <h4>Por: Samira de Melo Oliveira</h1>
-
+                    <h2 style="text-align: width;"><mark style="background-color: #BDC4FA;"> Se quiser saber mais sobre HTML, CSS ou JavaScript, acesse:</mark></h2> 
+                    <h3 style="text-align: center; text-decoration: none">
+                    <b><a class="two" href="https://www.youtube.com/channel/UCPVxAWpdHNjoUvGR617W5mQ">Cintia Pinho</a></b></h3>
+                    <h3 style="text-align: center;text-decoration: none;"><b><a class="two" href="https://www.w3schools.com/">W3Schools</a></b></h3>
+                    <p class="anco"><a href="javascript.html"class="pag">Clique aqui</a> para conhecer mais sobre JavaScript</p>
+            </div>
+    </div>
+    <footer>
+        <h1 class="centro">Obrigada Pela sua Atenção!!</h1>
+            <h4 class="centro">Por: Samira de Melo Oliveira</h1>
+    </footer>
 </body>
 </html>
