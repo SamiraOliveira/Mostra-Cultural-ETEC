@@ -15,20 +15,25 @@ body  {
 
 }
 header{ 
-		background-color: rgba(37, 66, 88, 100, 0.5);
-		padding: 0.5%;
+		background-color: rgba(95,158,160,0.5);
+		padding: 0.7%;
 		margin-bottom: 2%; 
 		
 }
 footer{
-		background-color: rgba(37, 66, 88, 100);
-		padding: 0.5%;
+		background-color: rgba(95,158,160,0.5);
+		padding: 0.7%;
 		margin-top: 2%;
-		 
 
+		 
+}
+.rodape{
+	padding: 2.0%;
+	background-color: rgba(95,158,160, 0.5);
+	margin-top: 2%;
 }
 
- h1,h4 {color:#BDC4FA; text-align: center; font-size: 25px; }
+ h1,h4 {color:white; text-align: center; font-size: 25px; font-weight: bold;}
  
  h3	   {color:#BDC4FA;text-align: center; text-shadow: 1px 1px #5F9EA0; text-decoration: overline; font-size:20px;}
  
@@ -47,7 +52,7 @@ a.two{
 a.two:hover{
 	font-size:21px;
 	color:#4682B4; 
-	text-decoration: underline; 
+	text-decoration: none; 
 
 }
  p{
@@ -123,12 +128,12 @@ th:hover { font-size:20px;
 	text-decoration: none;
 }
 .pag:hover{
-	
 	font-size:21px;
 
 }
   .centro{
   	color: white;
+  	font-weight: bold;
   	font-size: 25px;
   	
 
@@ -136,7 +141,7 @@ th:hover { font-size:20px;
   }
  
  .anco{
- 	color: #4682B4;
+ 	color: white;
  	font-size: 20px;
  	text-align: right;
  	font-weight: bold;
