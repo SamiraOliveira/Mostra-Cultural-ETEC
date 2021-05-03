@@ -17,7 +17,13 @@ body  {
 header{ 
 		background-color: rgba(95,158,160,0.5);
 		padding: 0.7%;
-		margin-bottom: 2%; 
+		margin-bottom: 2%;
+		position: fixed;
+		top:0;
+		right:0;
+		left:0;
+		mar
+
 		
 }
 footer{
@@ -41,8 +47,8 @@ footer{
  h1,h2,h3{
  	margin-top: 2%; 
  	margin-bottom: 2%;
- }
- 
+
+}
 
 a.two{ 
 	color:#fff;
