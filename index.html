@@ -5,38 +5,48 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css"> 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>Site 1C Samira</title>
+	<title>HTML, CSS e JavaS</title>
     <link rel="icon" href="img/favicon.png">
     
-</head>
+
 
 <body>
-    <header>
-        <nav>
-            <h1>HTML, CSS & JAVASCRIPT</h1>
+    <header class="hfixo">
+        <h1><img class="imglogo" src="img/logosite2.png"></h1>
+        <nav>  
+            <ul>
+                    <li><a href="#html">Inicio</a></li>
+                    <li><a href="#css">Css</a></li><li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="position.html">Positions</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contato</a></li>
+
+            </ul>        
         </nav>
     </header>
-    <div class="container">	
-    	   <h3 style="text-align: center; color:
-            #fff; text-decoration: none;margin-top: 10%;"><b>Conheça a <a class="two" href="https://www.etecmcm.com.br/">Etec MCM</a></b></h3>
+    <div class="container">
+            <h1>HTML, CSS & JAVASCRIPT</h1> 
+           <h3 style="text-align: center; color:
+            #fff; text-decoration: none;margin-top:0%;"><b>Conheça a <a class="two" href="https://www.etecmcm.com.br/">Etec MCM</a></b></h3>
 
-            <div>
+            <div id="html">
                     <h2>Introdução ao HTML </h1> 
             	   <p>HTML (Hyper Text Markup Language) é uma linguagem de marcação de hipertexto, utilizada para a criação de de páginas da Web. Essa é a linguagem que o seu navegador (Browser) decodifica para exibir as páginas. (FERREIRA & EIS, ONLINE, p.7)</p>
             	   <p>O HTML é baseado no conceito de Hipertexto. Hipertexto são conjuntos de elementos – ou nós – ligados por conexões. Estes elementos podem ser palavras, imagens, vídeos, áudio, documentos etc.</p>
-            	   <img src="img/intro.jpg" alt="Imagem escrito: HTML e CSS"style="width: 30%; outline-style: ridge;outline-color:#254258;"> 
+            	   <img class="imgtexto" src="img/intro.jpg" alt="Imagem escrito: HTML e CSS"style="width: 30%; outline-style: ridge;outline-color:#254258;"> 
 
-            	   <h2>Breve Histórico da evolução do HTML</h2>
+            	   <h2>Breve Histórico da evolução do HTML</h2>
             	   <p>Desde a invenção da web em 1992 por Tim Berners-Lee, a HTML evoluiu a cada versão lançada, sendo a versão mais atual a HTML5. (SILVA, 2011, p.21)</p>
-                    <img src="img/evo.png" alt="Imagem da Evoluçao do HTML5" style="width: 30%; outline-style: ridge;outline-color:#254258;" >
+                    <img class="imgtexto" src="img/evo.png" alt="Imagem da Evoluçao do HTML5" style="width: 30%; outline-style: ridge;outline-color:#254258;" >
                     <h2>Curiosidades HTML</h2>
                     <ul>
                     <li>Uma curiosidade a respeito da evolução do HTML é que em um workshop da W3C em 2004 as empresas Mozila e Opera apresentaram uma proposta para evolução do HTML4 para o HTML5, mas a W3C se recusou a dar continuidade a essa ideia.</li>
                     <li>Mas pouco tempo depois, as empresas Fundação Mozila, Apple e Opera anunciaram a criação de uma organização que visava a evolução do HTML, tal organização foi denominada WHATWG, a qual passou a desenvolver a linguagem XHTML.</li>
                     </ul>
-                    <img src="img/timbernes.png" alt="Tim Berners-Lee" style="width: 30%; outline-style: ridge;outline-color:#254258;">
+                    <img class="imgtexto"src="img/timbernes.png" alt="Tim Berners-Lee" style="width: 30%; outline-style: ridge;outline-color:#254258;">
             </div>
-            <div>
+            <div id="css">
                     <h2>O que é e para que serve o CSS</h2>
                     <p>CSS (Cascading Style Sheets — Folhas de Estilos em Cascata) é uma extensão da HTML, uma linguagem de estilo, ou seja, fazendo o uso dessa linguagem é possível definir como o conteúdo dos elementos HTML serão apresentados na página da Web. Essa extensão foi incorporada à linguagem HTML a partir de sua quarta versão em 1997. Ou seja, se você tivesse 10 tipos diferentes de fontes em uma mesma página, então teria de   fazer esta formatação 10 vezes. Até que fazer isto em uma só página, tudo bem, mas se o site tivesse 100 páginas então seria muito trabalhoso manter e alterar estas fontes, não acha?</p>
                         <h3>Benefícios do uso do CSS</h3>
@@ -44,9 +54,9 @@
                         <li>• Controle do layout de diversos documentos utilizando apenas uma folha de estilos;</li>
                         <li>• Maior precisão no controle do layout e design;</li>
                 	    <li>• Aplicação de diferentes layouts para adaptação do conteúdo e design em diferentes formas de apresentação (impressoras, telas de diferentes tamanhos, etc.) (W3CSCHOOL, ONLINE).</li></ul>
-                        <img src="img/css.jpg" alt="Imagem de um código CSS" style="width: 30%;outline-style: ridge;outline-color:#254258;">
+                        <img class="imgtexto" src="img/css.jpg" alt="Imagem de um código CSS" style="width: 30%;outline-style: ridge;outline-color:#254258;">
             </div>
-            <div>
+            <div id="w3c">
                     <h2>O que é o W3C?</h2>
                     <p>O W3C (World Wide Web Consortium), criado em outubro de 1994 por Tim Berners-Lee, é um consórcio internacional formado por empresas, instituições, pesquisadores, desenvolvedores e público em geral. A finalidade desse consórcio é desenvolver a web a seu potencial máximo, criando normas, especificações e padronizações que se aplicam aos mais diversos segmentos e setores da web. (W3C, ONLINE) </p>
                         <h3>Consórcio World Wide Web</h3>
@@ -58,9 +68,9 @@
                     	<li>• Padrões Web devem ser abertos, isto é, não proprietários;</li>
                     	<li>• A Web deve ser acessível para todos.</li>
                         </ul>
-                        <img src="img/W3C.png" alt="Imagem escrito: W3C"style="width: 20%; outline-style: ridge;outline-color:#254258;">
+                        <img class="imgtexto"src="img/W3C.png" alt="Imagem escrito: W3C"style="width: 20%; outline-style: ridge;outline-color:#254258;">
             </div>
-            <div>
+            <div id="contato">
                 
 
                     <h2 style="text-align: width;"><mark style="background-color: #BDC4FA;"> Se quiser saber mais sobre HTML, CSS ou JavaScript, acesse:</mark></h2> 
