@@ -1,89 +1,579 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/reset.css"> 
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>HTML, CSS e JavaS</title>
-    <link rel="icon" href="img/favicon.png">
-    
-
-
-<body>
-    <header class="hfixo">
-        <h1><img class="imglogo" src="img/Logosite2.png"></h1>
-        <nav>  
-            <ul>
-                    <li><a href="#html">Inicio</a></li>
-                    <li><a href="#css">Css</a></li><li>
-                    <li><a href="javascript.html">JavaScript</a></li>
-                    <li><a href="position.html">Positions</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Contato</a></li>
-
-            </ul>        
-        </nav>
-    </header>
-    <div class="container">
-            <h1>HTML, CSS & JAVASCRIPT</h1> 
-           <h3 style="text-align: center; color:
-            #fff; text-decoration: none;margin-top:0%;"><b>Conheça a <a class="two" href="https://www.etecmcm.com.br/">Etec MCM</a></b></h3>
-
-            <div id="html">
-                    <h2>Introdução ao HTML </h1> 
-            	   <p>HTML (Hyper Text Markup Language) é uma linguagem de marcação de hipertexto, utilizada para a criação de de páginas da Web. Essa é a linguagem que o seu navegador (Browser) decodifica para exibir as páginas. (FERREIRA & EIS, ONLINE, p.7)</p>
-            	   <p>O HTML é baseado no conceito de Hipertexto. Hipertexto são conjuntos de elementos – ou nós – ligados por conexões. Estes elementos podem ser palavras, imagens, vídeos, áudio, documentos etc.</p>
-            	   <img class="imgtexto" src="img/intro.jpg" alt="Imagem escrito: HTML e CSS"style="width: 30%; outline-style: ridge;outline-color:#254258;"> 
-
-            	   <h2>Breve Histórico da evolução do HTML</h2>
-            	   <p>Desde a invenção da web em 1992 por Tim Berners-Lee, a HTML evoluiu a cada versão lançada, sendo a versão mais atual a HTML5. (SILVA, 2011, p.21)</p>
-                    <img class="imgtexto" src="img/evo.png" alt="Imagem da Evoluçao do HTML5" style="width: 30%; outline-style: ridge;outline-color:#254258;" >
-                    <h2>Curiosidades HTML</h2>
-                    <ul>
-                    <li>Uma curiosidade a respeito da evolução do HTML é que em um workshop da W3C em 2004 as empresas Mozila e Opera apresentaram uma proposta para evolução do HTML4 para o HTML5, mas a W3C se recusou a dar continuidade a essa ideia.</li>
-                    <li>Mas pouco tempo depois, as empresas Fundação Mozila, Apple e Opera anunciaram a criação de uma organização que visava a evolução do HTML, tal organização foi denominada WHATWG, a qual passou a desenvolver a linguagem XHTML.</li>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Little Door</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon,png.png"/>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/Logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Professoras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portifólio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Alunas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                     </ul>
-                    <img class="imgtexto"src="img/timbernes.png" alt="Tim Berners-Lee" style="width: 30%; outline-style: ridge;outline-color:#254258;">
+                </div>
             </div>
-            <div id="css">
-                    <h2>O que é e para que serve o CSS</h2>
-                    <p>CSS (Cascading Style Sheets — Folhas de Estilos em Cascata) é uma extensão da HTML, uma linguagem de estilo, ou seja, fazendo o uso dessa linguagem é possível definir como o conteúdo dos elementos HTML serão apresentados na página da Web. Essa extensão foi incorporada à linguagem HTML a partir de sua quarta versão em 1997. Ou seja, se você tivesse 10 tipos diferentes de fontes em uma mesma página, então teria de   fazer esta formatação 10 vezes. Até que fazer isto em uma só página, tudo bem, mas se o site tivesse 100 páginas então seria muito trabalhoso manter e alterar estas fontes, não acha?</p>
-                        <h3>Benefícios do uso do CSS</h3>
-                        <ul>
-                        <li>• Controle do layout de diversos documentos utilizando apenas uma folha de estilos;</li>
-                        <li>• Maior precisão no controle do layout e design;</li>
-                	    <li>• Aplicação de diferentes layouts para adaptação do conteúdo e design em diferentes formas de apresentação (impressoras, telas de diferentes tamanhos, etc.) (W3CSCHOOL, ONLINE).</li></ul>
-                        <img class="imgtexto" src="img/css.jpg" alt="Imagem de um código CSS" style="width: 30%;outline-style: ridge;outline-color:#254258;">
+        </nav>
+        <!-- Cabeçalho-->
+        <header class="masthead">
+            <div class="container" style="color:#D9D9D9;">
+                <div class="masthead-subheading">Bem vindo(a) ao outro lado...</div>
+                <div class="masthead-heading text-uppercase">"Quando você tem medo, e faz mesmo assim, isso é coragem"
             </div>
-            <div id="w3c">
-                    <h2>O que é o W3C?</h2>
-                    <p>O W3C (World Wide Web Consortium), criado em outubro de 1994 por Tim Berners-Lee, é um consórcio internacional formado por empresas, instituições, pesquisadores, desenvolvedores e público em geral. A finalidade desse consórcio é desenvolver a web a seu potencial máximo, criando normas, especificações e padronizações que se aplicam aos mais diversos segmentos e setores da web. (W3C, ONLINE) </p>
-                        <h3>Consórcio World Wide Web</h3>
-                        <ul>
-                    	<li>• Desenvolve recomendações abertas (Padrões Web);</li>
-                    	<li>• Até agora, mais de 80 padrões;</li>
-                    	<li>• Engajado em educação, expansão e desenvolvimento de orientações; </li>
-                    	<li>• Um fórum neutro para construir consenso em torno de padrões Web;</li>
-                    	<li>• Padrões Web devem ser abertos, isto é, não proprietários;</li>
-                    	<li>• A Web deve ser acessível para todos.</li>
-                        </ul>
-                        <img class="imgtexto"src="img/W3C.png" alt="Imagem escrito: W3C"style="width: 20%; outline-style: ridge;outline-color:#254258;">
+        </header>
+        <!-- Sobre-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Sobre</h2>
+                    <h3 class="section-subheading text-muted">Coraline e o Mundo Secreto </h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Sobre o Filme</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">O filme "Coraline e o mundo secreto" foi nossa inspiração para o site, e ele nos passa uma mensagem simples, verdadeira e inocente, e ao mesmo tempo sombria, onde a imaginação de Coraline, nos leva a um mundo de muita curiosidade e atenção.</div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                
+                                <h4 class="subheading">Sobre o Filme</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Coraline se vê refém em sua nova vida, para ela não muda quase que nada em relação aos dois mundos (sombrio, mas ao mesmo tempo bonito). O que muda na verdade é o modo de vida, quando Coraline passa para o mundo imaginário</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                
+                                <h4 class="subheading">Sobre o Projeto</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Este projeto faz parte da Unidade Escolar ETEC Prof. Maria Cristina Medeiros, acontece no 1° ano do Ensino Médio – Integrado ao Técnico em Informática Para a Internet. Desenvolvido de julho a setembro de 2021.</p>
+                            <p class="text-muted">O objetivo é trabalhar a interdisciplinaridade entre os componentes Língua Portuguesa e Desenvolvimento de Sites. </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                
+                                <h4 class="subheading">Sobre o Projeto</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">A ideia é desenvolver a escrita por meio da narração, assim foram criados os contos literários. Além de tudo o foco é colocar em prática os conceitos aprendidos de HTML e CSS e gerar sites responsivos que se adaptam a diferentes tamanhos de telas. </p>
+                            <p class="text-muted">As competências socioemocionais também foram desenvolvidas neste projeto quando se trata de:</p>
+                            <ul class="text-muted">
+                                <li>Trabalho em Equipe;</li>
+                                <li>Criatividade;</li>      
+                                <li>Pro-atividade e responsabilidade nas entregas;</li>
+                            </ul>   
+                               </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Esconda
+                                <br />
+                                os seus
+                                <br />
+                                OLHOS!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div id="contato">
-                
-
-                    <h2 style="text-align: width;"><mark style="background-color: #BDC4FA;"> Se quiser saber mais sobre HTML, CSS ou JavaScript, acesse:</mark></h2> 
-                    <h3 style="text-align: center; text-decoration: none">
-                    <b><a class="two" href="https://www.youtube.com/channel/UCPVxAWpdHNjoUvGR617W5mQ">Cintia Pinho</a></b></h3>
-                    <h3 style="text-align: center;text-decoration: none;"><b><a class="two" href="https://www.w3schools.com/">W3Schools</a></b></h3>
-                    <p class="anco"><a href="javascript.html"class="pag">Clique aqui</a> para conhecer mais sobre JavaScript</p>
-                    <p class="anco"><a href="position.html"class="pag">Clique aqui</a> para ver alguns posicionamentos</p>
+        </section>
+        <!-- Professores-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Professoras</h2>
+                    <h3 class="section-subheading text-muted">Professoras que auxiliaram na criação do site:</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="">
+                            <img class="mx-auto rounded-circle" src="assets/img/cintia.jpeg" height="300px">
+                        </span>
+                        <h4 class="my-3">Cintia Pinho</h4>
+                        <p class="text-muted">Mestre em Informática e Gestão do Conhecimento, especialização na área de Ciências de Dados e Processamento de Linguagem natural dentro do componente de Inteligência Artificial.</p>
+                        <p class="text-muted">Professora de Informática e Gestão de Projetos Centro Paula Souza - ETEC MCM. </p>
+                        <p class="text-muted">Desenvolvedora Web e de Inteligência Artificial - Tecnologia Única.</p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <span class="">
+                           <img class="mx-auto rounded-circle" src="assets/img/barbara.jpeg" height="300px">
+                        </span>
+                        <h4 class="my-3">Bárbara Tomázia</h4>
+                        <p class="text-muted">Profª Bárbara Tomazia Alexandre licenciada em Letras- Português e Espanhol. Pós-graduada em Psicopedagogia Institucional e em Docência no Ensino Superior. Leciono Português e Espanhol no Ensino Médio e Técnico.</p>
+                    </div>
+                </div>
             </div>
-    </div>
-    <footer>
-        <h1 class="centro">Obrigada Pela sua Atenção!!</h1>
-            <h4 class="centro">Por: Samira de Melo Oliveira</h1>
-    </footer>
-</body>
+        </section>
+        <!-- Portifólio-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfólio</h2>
+                    <h3 class="section-subheading text-muted">Contos familiares</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/1.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">A viajem</div>
+                                <div class="portfolio-caption-subheading text-muted">A família de Bruna resolve fazer uma viagem  com a família para a fazenda do seu tio Wagner. No dia da viagem foram em 4 carros um dos carros se separou de todos e chegou apenas no outro dia...Após chegarem e se acomodarem as coisas começaram a ficar estranha após o Natal </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/2.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">A imigração</div>
+                                <div class="portfolio-caption-subheading text-muted">Em 1892 ainda estava acontecendo a imigração  italiana um acontecimento histórico, onde europeus enfrentaram grandes problemas em seus países, nessa época o mar não se encontrava em seus melhores  dias, onde o navio RÉ UMBERTO passava por lá.... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/3.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Coração Resiliente</div>
+                                <div class="portfolio-caption-subheading text-muted">Helena uma menina que não era de se abrir muito aos seus 15 anos teve seu primeiro namorado, um menino bom porém como os dois era muito imaturo ainda só durou 6 meses de muitas desavenças e brigas.Os dois seguiram caminhos bem diferentes, após 3 anos ela se apaixonou de novo porém esse o final foi bem diferente se casou e teve um casal de filhos lindos, porém Helena era muito jovem para perceber que o seu casamento não tinha o mais importante o amor verdadeiro. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/4.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Um conto de Esperança</div>
+                                <div class="portfolio-caption-subheading text-muted">Na infância ser filha mais velha de 8 irmãos, e precisar aprender a dividir e cuidar deles, mesmo nao tendo o suficiente para nem dois,apesar de  tudo a felicidade é fácil de encontrar. Num simples dia de chuva ou um mergulho no rio já é o suficiente para esquecer a dificuldade e desfrutar por um longo tempo a alegria... </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/5.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Homenagem</div>
+                                <div class="portfolio-caption-subheading text-muted">Meu nome é Maria tenho 15 anos e pude conhecer a pessoa mais carinho e fofa, a minha avó, Ela era uma idosinha muito fofa de cabelos branquinhos, bem pequenininha, ela cuidou do seus 7 filhos sozinha durante a vida teve que aprender a vê-los indo embora. Nós dias de chuva deixava eu dormir bem quentinha ao seu lado, ela sempre contava histórias do que meu pai aprontava contava as histórias  com o seu sorriso bonito.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/6.jpeg" alt="..."/>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Vida Matuta</div>
+                                <div class="portfolio-caption-subheading text-muted">Meu nome é Bete, passei por muitas coisas na minha juventude, dificuldades, fome, cresci sem meu pai, e até desisti da escola, casei muito nova, mas mesmo com todas essas coisas me tornei forte e vivi intensamente, meu pilar é a minha familia.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Alunas</h2>
+                    <h3 class="section-subheading text-muted">Alunas responsáveis por desenvolver o site:</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpeg" alt="..." />
+                            <h4>Mayra Bruno do Nascimento</h4>
+                            <p class="text-muted">Criadora de conteúdo</p>
+                            <a class="btn btn-dark btn-social mx-2" href=" https://www.facebook.com/mayrabruno.nascimento.5"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href=" https://www.instagram.com/invites/contact/?i=czpyu7rmg8ey&utm_content=2pfp5an"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpeg" alt="..." />
+                            <h4>Laura Esther Correia Jeronimo</h4>
+                            <p class="text-muted">Programadora</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/lauraesth?s=09"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/lauraesther.correiajeronimo"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/laura.ec.jeronimo?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Samira de Melo Oliveira</h4>
+                            <p class="text-muted">Programadora</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/Olivsami?s=09"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href=" https://www.facebook.com/profile.php?id=100009279823199"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/_olivsami/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Somos estudantes da Etec Maria Cristina Medeiros em Ribeirão Pires(SP), fazemos ensino médio integrado ao curso de Informática para internet.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Nos Contate<h2>
+                    <h3 class="section-subheading text-muted">Gostou do nosso site? Por favor, nos envie uma mensagem!</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Seu nome *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Seu Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">O email é obrigatório</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email inválido</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Número de telefone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">O número de telefone é obrigatório</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Sua mensagem *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A mensagem é obrigatória</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----Submit success message-->
+                    <!---->
+                    <!-- S
+                    <!- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Envio do formulário com sucesso!</div>
+                            Para ativar este formulário, inscreva-se em</div>
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erro de Envio!</div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar Mensagem</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy;Little Door</div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">A Viajem</h2>
+                                    <p class="item-intro text-muted">Por: Mayra Bruno</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p>Meu nome é Bruna Pereira, minha família um tanto maluca decidiu fazer uma viagem com toda a família para passar o Natal na fazenda do meu Tio Wagner.
+No dia 20 de dezembro todos se reunimos e fomos rumo a Ourinho, cidade onde meu tio morava, fomos em 4 carros nos quais dividimos toda a família. Desde a estrada foi uma aventura, meu tio se separou de nós e chego apenas no outro dia, o carro de meu pai fico sem gasolina no meio da estrada, nós perdemos algumas vezes, mas chegamos depois de 12h dentro do carro. Tudo estava muito bom, chegamos e nós instalamos dentro de uma casa dentro da fazendo, onde dormimos todos juntos, fomos ao mercado para ajudar nas despesas da casa, e todos estavam muito felizes pela viagem em família, estava tudo  muito bem, pela manhã às crianças da família iam ajudar o tio com os cavalos e a tirar leite das vacas, minha vó preparava um café da manhã maravilhosa para todos e as mulheres ficavam na cozinha fazendo gostosuras e os homens ficavam jogando sinuca na varando, tudo em perfeita harmonia. Passou-se então o natal e as coisas começaram a ficar um pouco estranhas, minha vó que sempre acreditou em fantasmas, dizia sentir uma presença estranha na casa na qual dormíamos, as crianças começaram a ter umas atitudes estranhas e na noite antes da virada do ano meus primos Lucas e Pedro decidiram fazer uma brincadeira com toda a família, falaram com a crianças e todos muito animados prepararam um baita susto para todos, na manhã da virada logo cedo as crianças começaram a imitar fantasma o que deixou todos muito assustados, mas a brincadeira não durou muito, logo todos começaram a rir e todos perceberam que era tudo uma brincadeira. Passamos o Ano Novo rindo da brincadeira, porém minha vó conta até hoje que realmente viu coisas inexplicáveis naquela casa e que nunca mais levará todos para ficarem lá, minha mãe diz que realmente nós ficamos muito estranhos e que houveram acontecimentos que as crianças não pareciam elas mesmas, mas nenhuma criança consegue se lembrar de ter feito nada, e até hoje nunca mais fizemos uma viagem com toda a família.
+</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Aventura, Comédia e Suspense.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">A imigração</h2>
+                                    <p class="item-intro text-muted">Por: Laura Esther</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Era novembro de 1892, ainda estava ocorrendo a imigração italiana, um acontecimento histórico que ocorreu entre os anos de 1880 e 1920, onde milhares de europeus enfrentavam grandes problemas em seus países, e precisaram então imigrar para um novo lugar. O destino principal deles, era a América do Sul. 
+Nessa época, o mar não se encontrava em seus melhores dias, estava tenebroso por onde o navio “Ré Umberto” passava em seu caminho. O navio tinha saído da cidade de Venezia, Itália e estava em direção ao sudeste do Brasil. Em meio a tantas pessoas presentes nessa embarcação, existia uma família que se estabeleceria em Minas Gerais e que teria de viver com um erro que viria a ser resolvido apenas 127 anos depois. 
+Quando a família encontrou seu lugar em território brasileiro, ainda precisavam se registrar como moradores do país. Eles que não sabiam nada do português que os habitantes nativos falavam e estavam sem seus documentos, por conta disso não conseguiam ter uma boa comunicação com os brasileiros, então, existiram certos problemas nesse momento: o sobrenome da família foi entendido de forma errada, foi trocado de Gerolami para Jeronimo, e assim ficou até 2019, pois nesse ano os bisnetos desses imigrantes foram atrás de voltar ao sobrenome original da família. Hoje, os documentos daqueles que tiveram de viver aqui tendo seu nome errado, estão todos de forma correta. 
+</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Aventura
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                       Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Coração Resiliente</h2>
+                                    <p class="item-intro text-muted">Por: Samira Oliveira</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Helena nunca foi de se abrir muito, desde de bebê não era qualquer um que podia segurá-la nos braços. Aos 15 anos ela teve seu primeiro namorado, Aldo, um menino bom, de ótimo coração, mas como os dois eram muito imaturos ainda, o relacionamento durou apenas 6 meses de muitas desavenças, brigas e desentendimentos. Os dois seguiram caminhos diferentes, com a esperança de construir uma vida ao lado de outras pessoas.  
+Três anos depois, a menina se apaixonou perdidamente de novo, mas o final foi diferente dessa vez, ela se casou, e com o marido, teve um casal lindo de filhos. Helena era muito jovem para perceber que esse casamento não continha o mais importante: o Amor verdadeiro, e então depois de 20 anos de casamento, eles decidiram se separar. Ela ficou muito abalada, seus olhos demoraram tanto tempo pra se abrir, depois de seu coração ter sido quebrado tantas vezes, ela decidiu mudar, e poder, enfim encontrar o amor em que tanto procurava nos outros, dentro de si.
+Um ano depois da separação, por ironia do destino, seu primeiro namorado, Aldo, a encontrou numa rede social. Os dois conversaram, relembraram os velhos tempos e resolveram suas questões antigas. Depois de um tempo de conversa, perceberam que o amor não tinha acabado. Aldo depois do término, nunca mais conseguiu se relacionar com outras pessoas, e a moça, tinha uma chama ardendo em seu coração dizendo para tentar novamente.
+Enfim, um casal! Aldo e Helena voltaram! Um mês, dois meses, quatro meses, sete meses....
+No oitavo mês, o homem chamou a moça pra conversar. Disse que não podiam mais continuar juntos, afinal, ele tinha se enganado com seus sentimentos, o que sentia por ela, era profunda gratidão, respeito e admiração, não amor, e de novo Helena se despedaça, finalmente achava que seria “feliz para sempre”... Aldo, mudou de cidade para bem longe, afim de novas oportunidades, novas paixões... Helena tem sonhos, então continuou em sua terra buscando condições para realiza-los algum dia, afinal depois de tanto seu coração ser quebrado, é necessário juntas seus pedaços e recomeçar quantas vezes precisar. Seu “feliz para sempre” é você quem faz.
+</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Romance, drama.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                       Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Um conto de Esperança</h2>
+                                    <p class="item-intro text-muted">Por: laura Esther</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Viver no interior do nordeste brasileiro, é morar em meio a fome, a seca e a miséria que rondam o lugar desde os tempos mais antigos. Na infância, ser a filha mais velha de 8 irmãos, é ter que cuidar de todos e precisar aprender a dividir aquilo que se tem em casa, mesmo não sendo o suficiente nem para dois. Apesar disso, a felicidade é ainda fácil de encontrar, um simples dia de chuva ou um mergulho no rio, já é o suficiente para esquecer a dificuldade e desfrutar por um longo tempo essa pequena alegria. Você cresce admirando coisas simples e tendo grandes sonhos.
+Até o momento que você cresce, enxerga que precisa dar um jeito na vida e que será necessário deixar tudo para trás. Vai para São Paulo, tentar ter melhores oportunidades na cidade grande, mas no começo é muito duro, achar um emprego que lhe pague bem é complicado, a saudade aperta e você percebe que seus grandes sonhos de antes, aos poucos, vão se desfazendo, sua fonte de alegria foi deixada na sua terra e agora só te resta a fé e a esperança de que logo você volta para rever quem ainda está lá. 
+Depois de alguns anos, tudo realmente se ajeita. Agora sua renda é boa, você visita a família duas vezes ao ano, encontrou novas fontes de alegria e realizou os novos sonhos que criou nessa estrada. E você sabe que foi necessário lutar para isso, afinal, você sentiu na pele o que é preciso para alcançar a vitória. No começo foi difícil, mas no final, a estrada compensa.
+</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Drama
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                       Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Homenagem</h2>
+                                    <p class="item-intro text-muted">Por: Mayra Bruno</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Meu nome é Maria tenho 15 anos, meus pais se chamam Lúcio e Mariana, na minha vida eu pude conhecer a pessoa mais fofa, carinhosa, amorosa e guerreira que eu já conheci, minha avó. Ela era uma idosinha muito fofa de cabelos bem branquinhos, ela era bem pequenininha, é um pouco gordinha, parecia aquelas avós de filmes que enchem os netos de doces e gostosuras, eu falo que ela é a pessoa mais guerreira que eu conheço porque criou  sete filhos sozinha, e durante a vida teve que aprender a vê-los indo embora… eu falo que ela é a pessoa mais carinhosa, amorosa e fofa que eu conheço porque quando chovia ela deixava eu dormir bem quentinha ao seu lado para que eu não sentisse medo…. Melhor parte das minhas férias era quando minha vó e minha tia passavam um tempo lá em casa, cuidavam tão bem de mim, comidas deliciosas e abraços quentinhos… Ela tinha as melhores histórias, contava as histórias do que meu pai aprontava, “ um dia seu pai chegou com o dedo cortado sangrando muito, eu ingênua não época corri e passei café na ferida para estancar o sangue, chegando no hospital o médico brigou muito comigo”, sempre contava as histórias com o sorriso mais bonito que existe. Sempre muito animada e feliz… com o tempo a idade chegando e fazendo de tudo para deixar ela para baixo, mais o sorriso sempre em seu rosto, ela passou por muito coisa e sempre foi minha guerreira, foi e sempre será difícil ter que dizer adeus… queria muito que você conhecesse meu futuro namorado, e olhasse para ela com cara de brava e perguntasse se ele cuidaria de mim, queria muito que você conhecesse seu bisnetos, conhecesse minha casa e que eu tivesse a oportunidade de realizar seus maiores sonhos, te levar a praia…. Mais vc se foi, se foi mais sempre estará em nossos corações, sempre me lembrarei das histórias, das brincadeiras, dos abraços quentinhos, sempre terei você em meu coração vozinha. 
+Te amo. 🖤
+</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Carta e Romance.
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Vida Matuta</h2>
+                                    <p class="item-intro text-muted">Por: Samira Oliveira</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Na minha época de adolescente, a vida não era tão boa, era de precisão, de garra e principalmente de muita carência. Meu nome é Bete, e eu trabalhava na roça com a minha mãe dês de muito nova, pois ela se tornou viúva muito cedo, nunca terminei a escola, era muito longe da minha casa, e como não tinha condução, eu e meus irmãos íamos à pé, nunca tive muito interesse em estudar, então  chegou um momento que desisti. Minha forma de diversão era fazer bonecas de espigas de milho e vesti-las com os retalhos de roupas velhas que eu costurava. Minha mãe sempre me deu conselhos do tipo: "Não case cedo filha, não desperdice sua vida". Mas infelizmente não gostava muito de conselhos... Tanto que acabei casando e saindo de casa com 18 anos. Aprendi a viver, a me manter, a me alimentar sozinha, por minha própria conta, nunca precisei apoiar em ninguém pra nada! As dificuldades que eu enfrentei me fizeram quem sou hoje. Tive 9 filhos e nunca faltou nada para nenhum deles, desde o cuscuz com leite até o feijão com farinha. Na minha casa nunca entrou muito luxo não, luxo pra mim era ter minha familia comigo todas as noites e muito amor espalhado pela casa. </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Biografia, fato real
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
